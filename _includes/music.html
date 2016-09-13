@@ -8,21 +8,13 @@
                 </div>
             </div>
             <div class="row text-center">
-              <div class="col-md-4">
-                  <h4 class="service-heading">Back In Town</h4>
-                  {% soundcloud_sound 275415715 %}
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-              </div>
-              <div class="col-md-4">
-                  <h4 class="service-heading">Breaking Down</h4>
-                  {% soundcloud_sound 275415327 %}
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-              </div>
-              <div class="col-md-4">
-                  <h4 class="service-heading">RN12</h4>
-                  {% soundcloud_sound 275415857 %}
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-              </div>
+              {% for music in site.musics %}
+                <div class="col-md-4">
+                    <h4 class="service-heading">{{ music.title }}</h4>
+                    {% soundcloud_sound {{ music.id }} html5 large %}
+                    <p class="text-muted">{{ music.description }}</p>
+                </div>
+              {% endfor %}
             </div>
         </div>
     </section>

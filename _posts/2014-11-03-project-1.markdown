@@ -21,4 +21,5 @@ artists:
     instrument: Batterie
   - name: Serge Lavalette
     instrument: Invité Guitare
+
 ---

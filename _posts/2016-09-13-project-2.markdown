@@ -21,4 +21,5 @@ artists:
     instrument: Contre-Basse
   - name: Vincent Frade
     instrument: Batterie
+
 ---

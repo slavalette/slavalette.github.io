@@ -1,0 +1,15 @@
+---
+title: Return to Rock & Soul Legends 3
+subtitle: Concert Laurette Fugain
+layout: default
+modal-id: 1
+date: 2016-05-10
+img: serge-2.jpg
+thumbnail: serge-2-thumbnail.jpg
+alt: image-alt
+project-date: Mai 2016
+client: Laurent Gampel
+category: Rock & Soul
+description: Concert carritatif organisé par Laurent Gampel, président de l'association Laurette Fugain.
+
+---

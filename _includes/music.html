@@ -11,7 +11,7 @@
               {% for music in site.musics %}
                 <div class="col-md-4">
                     <h4 class="service-heading">{{ music.title }}</h4>
-                    {% soundcloud_sound {{ music.id }} html5 large %}
+                    {% soundcloud_sound {{ music.sound-cloud-id }} %}
                     <p class="text-muted">{{ music.description }}</p>
                 </div>
               {% endfor %}

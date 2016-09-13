@@ -1,0 +1,7 @@
+---
+title: Let's go on tour!
+start-date: Jan 01, 1985
+img: live.jpg
+alt: live
+description: The screaming fans have exposed my left ear...
+---

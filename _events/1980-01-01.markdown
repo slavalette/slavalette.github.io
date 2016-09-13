@@ -1,0 +1,8 @@
+---
+title: First Guitar Lessons
+start-date: 1980
+img: guitar-lessons.jpg
+alt: guitar-lessons
+description: Always work harder to become the best
+
+---

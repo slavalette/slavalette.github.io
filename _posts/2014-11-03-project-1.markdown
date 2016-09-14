@@ -4,12 +4,12 @@ subtitle: Concert Laurette Fugain
 layout: default
 modal-id: 1
 date: 2016-05-10
-img: serge-2.jpg
-thumbnail: serge-2-thumbnail.jpg
+img: serge-1.jpg
+thumbnail: serge-1-thumbnail.jpg
 alt: image-alt
-project-date: Mai 2016
+project-date: May 2016
 client: Laurent Gampel
 category: Rock & Soul
-description: Concert carritatif organisé par Laurent Gampel, président de l'association Laurette Fugain.
+description: Carritatif concert organized by Laurent Gampel , president of the association Laurette Fugain .
 
 ---

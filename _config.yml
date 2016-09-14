@@ -12,11 +12,11 @@ collections:
   musics:
     output: true
 
-# Team names, titles and social links
+# Band names, titles and social links
 people:
-- name: Kay Garland
-  pic: 1
-  position: Lead Designer
+- name: Benoit Sourisse
+  pic: benoit-sourisse
+  position: Organ
   social:
     - title: twitter
       url: #
@@ -25,9 +25,9 @@ people:
     - title: stack-overflow
       url: #
 
-- name: Larry Parker
-  pic: 2
-  position: Lead Marketer
+- name: Andre Charlier
+  pic: andre-charlier
+  position: Drum
   social:
     - title: twitter
       url: #

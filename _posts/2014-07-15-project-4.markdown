@@ -35,4 +35,5 @@ artists:
     instrument: Chœur
   - name: Jean-Marrie Marrier
     instrument: Chœur
+
 ---

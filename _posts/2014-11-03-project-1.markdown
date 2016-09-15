@@ -2,10 +2,10 @@
 title: Return to Rock & Soul Legends 3
 subtitle: Concert Laurette Fugain
 layout: default
-modal-id: 4
+modal-id: 1
 date: 2016-05-10
-img: serge-4.jpg
-thumbnail: serge-4-thumbnail.jpg
+img: serge-1.jpg
+thumbnail: serge-1-thumbnail.jpg
 alt: image-alt
 project-date: May 2016
 client: Laurent Gampel

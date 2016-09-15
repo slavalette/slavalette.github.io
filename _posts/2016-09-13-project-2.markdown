@@ -1,0 +1,15 @@
+---
+title: Concert Antoine Hervier
+subtitle: invite Marcel Azzola
+layout: default
+modal-id: 2
+date: 2016-06-18
+img: serge-2.jpg
+thumbnail: serge-2-thumbnail.jpg
+alt: image-alt
+project-date: June 2016
+client: Serge Lavalette
+category: Jazz
+description: Jazz Concert ! Pianist , organist, Antoine invites Hervier Marcel Azzola , accordionist to play alongside him .
+
+---

@@ -12,6 +12,13 @@ collections:
   musics:
     output: true
 
+# Video
+video:
+  title: New record session
+  id: igWSSYr154k
+  height: 360
+  width: 640
+
 # Band names, titles and social links
 people:
 - name: Benoit Sourisse

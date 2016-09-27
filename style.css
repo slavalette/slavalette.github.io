@@ -1,8 +1,26 @@
 ---
 layout: style
 ---
+@media only screen and (min-width: 700px) {
+  #video-youtube {
+    height: 30em;
+    width: 52em;
+    margin-bottom: 5em;
+  }
+}
 
-#video-youtube {
-  height: 360px;
-  width: 640px;
+@media only screen and (max-width: 700px) {
+  #video-youtube {
+    height: 14em;
+    width: 22em;
+    margin-bottom: 2em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  #video-youtube {
+    height: 12em;
+    width: 19em;
+    margin-bottom: 1em;
+  }
 }

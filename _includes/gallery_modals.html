@@ -45,7 +45,9 @@
                                   <h2>{{ post.title }}</h2>
                                   <p>{{ post.subtitle }}</p>
                                   <p class="sub-text">{{ post.date }}</p>
-                                  <p>{{ post.description }}</p>
+                                  {% for artist in post.artists %}
+                                    <p>{{ artist.name }} ({{ artist.instrument }})</p>
+                                  {% endfor %}
                               </div>
                           </div>
                       </div>

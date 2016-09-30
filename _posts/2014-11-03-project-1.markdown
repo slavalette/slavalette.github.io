@@ -17,7 +17,7 @@ artists:
     instrument: Contre-basse
   - name: Benoit Sourisse
     instrument: Piano
-  - name: Philippe Audiger
+  - name: Julien Audigier
     instrument: Batterie
   - name: Serge Lavalette
     instrument: Invité Guitare

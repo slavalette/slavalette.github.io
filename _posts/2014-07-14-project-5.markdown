@@ -1,15 +1,21 @@
 ---
-title: Serge Lavalette Trio
-subtitle: Concert jazz groove
+title: Malik Mezzadri / Sarah Murcia
+subtitle: Festival "Jazz de Mars"
 layout: default
 modal-id: 5
-date: 2015-06-12
-img: serge-5.jpg
-thumbnail: serge-5-thumbnail.jpg
+date: 12-04-2015
+img: malik-sarah.jpg
+thumbnail: malik-sarah-thumbnail.jpg
 alt: image-alt
 project-date: June 2015
 client: Serge Lavalette
-category: Jazz
-description: Serge Lavalette's group for a great jazz concert.
+place: Église de Tillières sur Avre
+artists:
+  - name: Malik Mezzadri
+    instrument: Flûte
+  - name: Sarah Murcia
+    instrument: Contre-basse
+  - name: Serge Lavalette
+    instrument: Invité/Ukulélé
 
 ---

@@ -1,15 +1,24 @@
 ---
-title: Concert Antoine Hervier
-subtitle: invite Marcel Azzola
+title: Antoine Hervier invite Marcel Azzola
+subtitle: Inauguration du festival "Jazz de Mars"
 layout: default
 modal-id: 2
-date: 2016-06-18
-img: serge-2.jpg
-thumbnail: serge-2-thumbnail.jpg
+date: 01-01-1970
+img: antoine-marcel.jpg
+thumbnail: antoine-marcel-thumbnail.jpg
 alt: image-alt
-project-date: June 2016
-client: Serge Lavalette
-category: Jazz
-description: Jazz Concert ! Pianist , organist, Antoine invites Hervier Marcel Azzola , accordionist to play alongside him .
-
+project-date: Inconnu
+client: Antoine Hervier
+place: Salle des fêtes de Mainvillier
+artists:
+  - name: Marcel Azzola
+    instrument: Accordéon
+  - name: Antoine Hervier
+    instrument: Piano
+  - name: Serge Lavalette
+    instrument: Guitare
+  - name: Guillaume Souriau
+    instrument: Contre-Basse
+  - name: Vincent Frade
+    instrument: Batterie
 ---

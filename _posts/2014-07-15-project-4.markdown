@@ -1,15 +1,38 @@
 ---
-title: Return to Rock & Soul Legends 3
-subtitle: Concert Laurette Fugain
+title: Return to Rock & Soul Legends
+subtitle: Association "Laurette Fugain"
 layout: default
 modal-id: 4
-date: 2016-05-10
-img: serge-4.jpg
-thumbnail: serge-4-thumbnail.jpg
+date: 03-10-2015
+img: rock-n-soul.jpg
+thumbnail: rock-n-soul-thumbnail.jpg
 alt: image-alt
-project-date: May 2016
+project-date: Octobre 2015
 client: Laurent Gampel
-category: Rock & Soul
-description: Carritatif concert organized by Laurent Gampel , president of the association Laurette Fugain .
-
+place: La Cigalle
+artists:
+  - name: Laurent Gampel
+    instrument: Chant
+  - name: Lavalette Serge
+    instrument: Chef d'Orchestre / Guitare
+  - name: Hervé Le Bouché
+    instrument: Batterie
+  - name: Thierry Jean-Pierre
+    instrument: Basse
+  - name: Jean-Baptiste
+    instrument: Clavier
+  - name: Nicolas Guiraud
+    instrument: Percussions
+  - name: Laurent Bonnet
+    instrument: Saxophone
+  - name: Olivier Caron
+    instrument: Trombonne
+  - name: Éric Poirrier
+    instrument: Trompette
+  - name: Vanessa Maugez
+    instrument: Chœur
+  - name: Myriam Abel
+    instrument: Chœur
+  - name: Jean-Marrie Marrier
+    instrument: Chœur
 ---

@@ -1,15 +1,24 @@
 ---
-title: Return to Rock & Soul Legends 3
-subtitle: Concert Laurette Fugain
+title: Jean-Marie Marrier
+subtitle: Album Nature Boy
 layout: default
 modal-id: 1
-date: 2016-05-10
-img: serge-1.jpg
-thumbnail: serge-1-thumbnail.jpg
+date: 14-02-2015
+img: jean-marie-marrier.jpg
+thumbnail: jean-marie-marrier-thumbnail.jpg
 alt: image-alt
-project-date: May 2016
-client: Laurent Gampel
-category: Rock & Soul
-description: Carritatif concert organized by Laurent Gampel , president of the association Laurette Fugain .
-
+project-date: Février 2015
+client: Jean-Marrie Marrier
+place: Théâtre de la Vallée St Rémy sur Avre
+artists:
+  - name: Jean-Marrie Marrier
+    instrument: Chant/Guitare
+  - name: Phiphi Chayeb
+    instrument: Contre-basse
+  - name: Benoit Sourisse
+    instrument: Piano
+  - name: Philippe Audiger
+    instrument: Batterie
+  - name: Serge Lavalette
+    instrument: Invité Guitare
 ---

@@ -1,15 +1,23 @@
 ---
-title: Return to Rock & Soul Legends 3
-subtitle: Concert Laurette Fugain
+title: Thierry Eliez trio
+subtitle: Inauguration du festival "Jazz de Mars"
 layout: default
 modal-id: 3
-date: 2016-05-10
-img: serge-3.jpg
-thumbnail: serge-3-thumbnail.jpg
+date: 07-03-2015
+img: thierry-eliez.jpg
+thumbnail: thierry-eliez-thumbnail.jpg
 alt: image-alt
-project-date: May 2016
-client: Laurent Gampel
-category: Rock & Soul
-description: Carritatif concert organized by Laurent Gampel , president of the association Laurette Fugain .
+project-date: Mars 2015
+client: Thierry Eliez
+place: Salle des fêtes de Saint Lubin des Joncherets
+artists:
+  - name: Thierry Eliez
+    instrument: Piano/Chant
+  - name: Philippe Eliez
+    instrument: Batterie
+  - name: Daniel Ouvrard
+    instrument: Basse
+  - name: Serge Lavalette
+    instrument: Guitare
 
 ---

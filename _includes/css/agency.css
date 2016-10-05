@@ -649,6 +649,17 @@ section h3.section-subheading {
     margin-top: 0;
 }
 
+#band ul.download {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+
+#band ul.timeline:before {
+  display: none;
+}
+
 aside.clients img {
     margin: 50px auto;
 }

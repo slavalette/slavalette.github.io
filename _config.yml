@@ -27,44 +27,41 @@ people:
   pic: benoit-sourisse
   position: B3
   social:
-    - title: twitter
-      url: #
+    - title: globe
+      url: http://charliersourisse.com/
     - title: facebook
-      url: #
-    - title: stack-overflow
-      url: #
+      url: https://www.facebook.com/benoit.sourisse
 
-- name: Andre Charlier
+- name: André Charlier
   pic: andre-charlier
   position: Batterie
   social:
     - title: twitter
-      url: #
+      url: https://twitter.com/andrecharlier
     - title: facebook
-      url: #
+      url: https://www.facebook.com/andre.charlier
     - title: linkedin
-      url: #
+      url: https://www.linkedin.com/in/andr%C3%A9-charlier-a049a945
 
 - name: Serge Lavalette
   pic: serge-lavalette
   position: Guitare
   social:
     - title: twitter
-      url: #
+      url: https://twitter.com/LavaletteS_Trio
     - title: facebook
-      url: #
-    - title: google-plus
-      url: #
+      url: https://www.facebook.com/Lavalette-serge-931589130259703/
+    - title: linkedin
+      url: https://fr.linkedin.com/in/serge-lavalette-a1a7462a
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
+  - title: twitter
+    url: https://twitter.com/LavaletteS_Trio
   - title: facebook
     url: https://www.facebook.com/Lavalette-serge-931589130259703/
-
-# Postal address (add as many lines as necessary)
-address:
-  - line: 3481 Melrose Place
-  - line: Beverly Hills, CA 90210
+  - title: linkedin
+    url: https://fr.linkedin.com/in/serge-lavalette-a1a7462a
 
 # Build settings
 markdown: kramdown

@@ -814,10 +814,6 @@ ul.social-buttons li a:active {
     outline: 0;
 }
 
-#page-top > footer > div > div > div:nth-child(2) > ul > li:nth-child(2) > a:nth-child(1) {
-  display: none;
-}
-
 .portfolio-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;

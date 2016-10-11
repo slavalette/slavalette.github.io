@@ -22,58 +22,12 @@
           </div>
           <div class="event">
             <h2>{{ eventname }}</h2>
-            <h3><i class="fa fa-clock-o fa-2x"></i> {{ eventtime }}</h3>
-            <h5><i class="fa fa-map-marker fa-2x"></i> {{ eventaddress }}</h5>
+            <i class="fa fa-clock-o fa-2x"></i><h3> {{ eventtime }}</h3>
+            <i class="fa fa-map-marker fa-2x"></i><h5 id="address"> {{ eventaddress }}</h5>
           </div>
 
           <div id="map"></div>
 
         </div>
-
-        <script type="text/javascript">
-          var map = null;
-          window.onload = function() {initMap()};
-          function initMap() {
-              var options = {
-                  center: new L.LatLng({{ site.data.map.latitude }}, {{ site.data.map.longitude }}),
-                  zoom: {{ site.data.map.zoom }}
-                };
-              var osmUrl = '{{ site.data.map.osm-url }}',
-                  osmAttribution = '{{ site.data.map.osm-attribution }}',
-                  osm = new L.TileLayer(osmUrl, {
-                      maxZoom: {{ site.data.map.max-zoom }},
-                      attribution: osmAttribution
-                  });
-              var mapLayer = new L.TileLayer(osmUrl);
-              this.map = new L.Map('map', options).addLayer(mapLayer);
-              locateUser();
-          }
-          function locateUser(position) {
-              fetch('http://api-adresse.data.gouv.fr/search/?q=' + '{{ eventaddress }}')
-                  .then(function(response) {
-                      if (response.ok) {
-                          return (response.json());
-                      }
-                  })
-                  .then(function(json) {
-                      var place = json.features[0];
-                      var longitude = place.geometry.coordinates[1]
-                      var latitude = place.geometry.coordinates[0]
-                      var yellowIcon = L.icon({
-                          iconUrl: 'map-marker.png',
-                          iconSize:     [50, 50], // size of the icon
-                      });
-                      var marker = L.marker([longitude, latitude], {icon: yellowIcon})
-                        .addTo(this.map);
-                      this.map.setView(
-                        [longitude, latitude],
-                        zoom = {{ site.data.map.zoom-in }},
-                        center = new L.LatLng(longitude, latitude)
-                      );
-                  })
-                  .catch(function(error) {
-                  });
-          }
-      </script>
     </section>
 {% endif %}

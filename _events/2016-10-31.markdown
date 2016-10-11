@@ -1,7 +1,7 @@
 ---
 date: 2016-10-31
-name: NICE!
-time: 20h
-address: 38 avenue du général Marceau Dreux
+name: Serge Jazz Trio
+time: 19h
+address: Rue de l'Appel du 18 Juin, Nonancourt
 
 ---

@@ -1,7 +1,0 @@
----
-date: 2016-12-12
-name: present
-time: 42h
-address: MarvinCity
-
----

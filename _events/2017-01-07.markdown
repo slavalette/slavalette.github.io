@@ -1,7 +1,7 @@
 ---
 date: 2017-01-07
-name: futur
+name: Serge Jazz Trio à Bercy
 time: 20h
-address: 38 avenue du général Marceau - Dreux
+address: Paris Bercy
 
 ---

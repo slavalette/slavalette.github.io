@@ -1,0 +1,36 @@
+<!-- News Section -->
+    <section id="news" class="bg-light-gray">
+        <div class="container">
+          <div class="row">
+              <div class="col-lg-12 text-center">
+                  <h2 class="section-heading">Actualités</h2>
+                  <h3 class="section-subheading text-muted">Mon prochain concert</h3>
+              </div>
+          </div>
+          <div>
+            <!-- {% capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture %}
+            {% capture nextevent %}{{ site.events | first }}{% endcapture %}
+            {% for event in site.events %}
+              {% capture eventtime %}{{event.date | date: '%s'}}{% endcapture %}
+              {% if eventtime > nowunix %}
+                {% capture nextevent %}{{ event }}{% endcapture %}
+                {% if eventtime > nowunix %}
+
+                {% endif %}
+              {% endif %}
+            {% endfor %} -->
+            {% capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture %}
+            {% assign events = site.events | sort:"date" %}
+            {% for event in events %}
+              {% capture eventtime %}{{event.date | date: '%s'}}{% endcapture %}
+              {% if eventtime > nowunix %}
+                <h2>{{ event.name }}</h2>
+                <h3>à {{ event.address }}</h3>
+                <h3>Début du concert: {{ event.time }}</h3>
+                {% break %}
+              {% endif %}
+            {% endfor %}
+
+          </div>
+        </div>
+    </section>

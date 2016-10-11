@@ -1,8 +1,0 @@
----
-title: New Album
-start-date: Sep 15, 2016
-img: record.jpg
-alt: record
-description: Album in the works whose release is scheduled for the end of 2016.
-
----

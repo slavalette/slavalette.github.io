@@ -1,8 +1,0 @@
----
-title: Birth of a legend
-start-date: July 21, 1974
-img: baby.jpg
-alt: baby
-description: An important day for all mankind ...
-
----

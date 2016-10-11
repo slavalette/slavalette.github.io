@@ -63,6 +63,9 @@ social:
   - title: linkedin
     url: https://fr.linkedin.com/in/serge-lavalette-a1a7462a
 
+# Upcoming posts
+future: true
+
 # Build settings
 markdown: kramdown
 permalink: pretty

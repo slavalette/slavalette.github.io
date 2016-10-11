@@ -694,6 +694,8 @@ section h3.section-subheading {
   line-height: 18px;
 }
 
+#map { height: 180px; }
+
 aside.clients img {
     margin: 50px auto;
 }

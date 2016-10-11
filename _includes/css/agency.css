@@ -694,7 +694,19 @@ section h3.section-subheading {
   line-height: 18px;
 }
 
-#map { height: 180px; }
+.event {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#map { height: 20em; }
 
 aside.clients img {
     margin: 50px auto;

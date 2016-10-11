@@ -700,6 +700,15 @@ section h3.section-subheading {
   align-items: center;
 }
 
+.event-info {
+  display: flex;
+  align-items: baseline;
+}
+
+.event-info>i {
+  margin: 0.3em;
+}
+
 .location {
   display: flex;
   flex-direction: column;

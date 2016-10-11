@@ -1,4 +1,17 @@
+{% capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture %}
+{% assign events = site.events | sort:"date" %}
+{% for event in events %}
+  {% capture eventtime %}{{event.date | date: '%s'}}{% endcapture %}
+  {% if eventtime > nowunix %}
+    {% capture eventname %}{{ event.name }}{% endcapture %}
+    {% capture eventaddress %}{{ event.address }}{% endcapture %}
+    {% capture eventtime %}{{ event.time }}{% endcapture %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
 <!-- News Section -->
+{% if eventname %}
     <section id="news" class="bg-light-gray">
         <div class="container">
           <div class="row">
@@ -7,23 +20,14 @@
                   <h3 class="section-subheading text-muted">Mon prochain concert</h3>
               </div>
           </div>
-          <div>
-
-            {% capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture %}
-            {% assign events = site.events | sort:"date" %}
-            {% for event in events %}
-              {% capture eventtime %}{{event.date | date: '%s'}}{% endcapture %}
-              {% if eventtime > nowunix %}
-                {% capture address %}{{ event.address }}{% endcapture %}
-                <h2>{{ event.name }}</h2>
-                <h3>{{ event.address }}</h3>
-                <h3>Début du concert: {{ event.time }}</h3>
-                <div id="map"></div>
-                {% break %}
-              {% endif %}
-            {% endfor %}
-
+          <div class="event">
+            <h2>{{ eventname }}</h2>
+            <h3><i class="fa fa-clock-o fa-2x"></i> {{ eventtime }}</h3>
+            <h5><i class="fa fa-map-marker fa-2x"></i> {{ eventaddress }}</h5>
           </div>
+
+          <div id="map"></div>
+
         </div>
 
         <script type="text/javascript">
@@ -45,7 +49,7 @@
               locateUser();
           }
           function locateUser(position) {
-              fetch('http://api-adresse.data.gouv.fr/search/?q=' + '{{ address }}')
+              fetch('http://api-adresse.data.gouv.fr/search/?q=' + '{{ eventaddress }}')
                   .then(function(response) {
                       if (response.ok) {
                           return (response.json());
@@ -53,11 +57,18 @@
                   })
                   .then(function(json) {
                       var place = json.features[0];
-                      var marker = L.marker([place.geometry.coordinates[1], place.geometry.coordinates[0]])
+                      var longitude = place.geometry.coordinates[1]
+                      var latitude = place.geometry.coordinates[0]
+                      var yellowIcon = L.icon({
+                          iconUrl: 'map-marker.png',
+                          iconSize:     [50, 50], // size of the icon
+                      });
+                      var marker = L.marker([longitude, latitude], {icon: yellowIcon})
                         .addTo(this.map);
                       this.map.setView(
-                        [place.geometry.coordinates[1], place.geometry.coordinates[0]],
-                        zoom = {{ site.data.map.zoom-in }}
+                        [longitude, latitude],
+                        zoom = {{ site.data.map.zoom-in }},
+                        center = new L.LatLng(longitude, latitude)
                       );
                   })
                   .catch(function(error) {
@@ -65,3 +76,4 @@
           }
       </script>
     </section>
+{% endif %}

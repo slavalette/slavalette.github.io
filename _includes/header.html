@@ -18,6 +18,19 @@
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+
+                    {% capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture %}
+                    {% assign events = site.events | sort:"date" %}
+                    {% for event in events %}
+                      {% capture eventtime %}{{event.date | date: '%s'}}{% endcapture %}
+                      {% if eventtime > nowunix %}
+                        <li>
+                            <a class="page-scroll" href="#news">Actualités</a>
+                        </li>
+                        {% break %}
+                      {% endif %}
+                    {% endfor %}
+
                     <li>
                         <a class="page-scroll" href="#music">Musique</a>
                     </li>

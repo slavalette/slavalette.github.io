@@ -1,5 +1,8 @@
 var map = null;
-window.onload = function() {initMap()};
+window.onload = function() {
+  initMap()
+  locateUser();
+};
 function initMap() {
     var options = {
         center: new L.LatLng(46.921982, 2.978952),
@@ -13,9 +16,8 @@ function initMap() {
         });
     var mapLayer = new L.TileLayer(osmUrl);
     this.map = new L.Map('map', options).addLayer(mapLayer);
-    locateUser();
 }
-function locateUser(position) {
+function locateUser() {
   console.log(document.getElementById('address').innerHTML);
     fetch('http://api-adresse.data.gouv.fr/search/?q=' + document.getElementById('address').innerHTML)
         .then(function(response) {

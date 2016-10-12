@@ -10,7 +10,7 @@ function initMap() {
         center: new L.LatLng(46.921982, 2.978952),
         zoom: 5
       };
-    var osmUrl = 'http://a.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png',
+    var osmUrl = 'https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png',
         osmAttribution = 'Map data &copy; 2012 OpenStreetMap contributors',
         osm = new L.TileLayer(osmUrl, {
             maxZoom: 8,

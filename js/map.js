@@ -1,7 +1,9 @@
 var map = null;
 window.onload = function() {
-  initMap()
-  locateUser();
+  if (document.getElementById('map')) {
+    initMap()
+    locateUser();
+  }
 };
 function initMap() {
     var options = {
@@ -18,7 +20,6 @@ function initMap() {
     this.map = new L.Map('map', options).addLayer(mapLayer);
 }
 function locateUser() {
-  console.log(document.getElementById('address').innerHTML);
     fetch('http://api-adresse.data.gouv.fr/search/?q=' + document.getElementById('address').innerHTML)
         .then(function(response) {
             if (response.ok) {

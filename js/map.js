@@ -20,7 +20,7 @@ function initMap() {
     this.map = new L.Map('map', options).addLayer(mapLayer);
 }
 function locateUser() {
-    fetch('http://api-adresse.data.gouv.fr/search/?q=' + document.getElementById('address').innerHTML)
+    fetch('https://api-adresse.data.gouv.fr/search/?q=' + document.getElementById('address').innerHTML)
         .then(function(response) {
             if (response.ok) {
                 return (response.json());

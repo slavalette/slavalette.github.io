@@ -1,10 +1,11 @@
 {% capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture %}
 {% assign events = site.events | sort:"date" %}
 {% for event in events %}
-  {% capture eventtime %}{{event.date | date: '%s'}}{% endcapture %}
-  {% if eventtime > nowunix %}
+  {% capture eventdate %}{{event.date | date: '%s'}}{% endcapture %}
+  {% if eventdate > nowunix %}
     {% capture eventname %}{{ event.name }}{% endcapture %}
     {% capture eventaddress %}{{ event.address }}{% endcapture %}
+    {% capture eventdate %}{{ event.date }}{% endcapture %}
     {% capture eventtime %}{{ event.time }}{% endcapture %}
     {% break %}
   {% endif %}
@@ -22,10 +23,35 @@
           </div>
           <div class="event">
             <h2>{{ eventname }}</h2>
+
+            <div class="event-info">
+              <i class="fa fa-calendar fa-2x"></i>
+              <h3>
+                {% assign m = eventdate | date: "%-m" %}
+                {{ eventdate | date: "%-d" }}
+                {% case m %}
+                  {% when '1' %} Janvier
+                  {% when '2' %} Févier
+                  {% when '3' %} Mars
+                  {% when '4' %} Avril
+                  {% when '5' %} Mai
+                  {% when '6' %} Juin
+                  {% when '7' %} Juillet
+                  {% when '8' %} Août
+                  {% when '9' %} Septembre
+                  {% when '10' %} Octobre
+                  {% when '11' %} Novembre
+                  {% when '12' %} Décembre
+                {% endcase %}
+                {{ eventdate | date: "%Y" }}
+              </h3>
+            </div>
+
             <div class="event-info">
               <i class="fa fa-clock-o fa-2x"></i>
               <h3>{{ eventtime }}</h3>
             </div>
+
             <div class="event-info">
               <i class="fa fa-map-marker fa-2x"></i>
               <h5 id="address">{{ eventaddress }}</h5>

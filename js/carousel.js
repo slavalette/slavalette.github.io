@@ -4,7 +4,7 @@ jQuery(document).ready(function($) {
               interval: 7000
       });
 
-      $('#carousel-text').html($('#slide-content-0').html());
+      $('#carousel-text').html($('#slide-content-1').html());
 
       //Handles the carousel thumbnails
      $('[id^=carousel-selector-]').click( function(){

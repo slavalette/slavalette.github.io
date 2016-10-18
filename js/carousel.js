@@ -1,7 +1,7 @@
 jQuery(document).ready(function($) {
 
       $('#myCarousel').carousel({
-              interval: 5000
+              interval: 7000
       });
 
       $('#carousel-text').html($('#slide-content-0').html());

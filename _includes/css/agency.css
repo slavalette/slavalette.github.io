@@ -448,6 +448,18 @@ section h3.section-subheading {
     }
 }
 
+.hide-bullets {
+    list-style: none;
+    margin-left: -40px;
+    margin-top: 20px;
+}
+
+a.carousel-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .timeline {
     position: relative;
     padding: 0;
@@ -896,7 +908,7 @@ ul.social-buttons li a:active {
 }
 
 .portfolio-modal .modal-content img {
-    margin-bottom: 30px;
+    width: 100%;
 }
 
 .portfolio-modal .close-modal {

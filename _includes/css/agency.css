@@ -449,6 +449,8 @@ section h3.section-subheading {
 }
 
 .hide-bullets {
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     margin-left: -40px;
     margin-top: 20px;

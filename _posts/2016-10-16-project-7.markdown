@@ -1,0 +1,17 @@
+---
+title:
+subtitle:
+layout:
+modal-id: 7
+date: 01-01-1970
+img: serge-3.jpg
+thumbnail: serge-3-thumbnail.jpg
+alt: image-alt
+project-date:
+client:
+place:
+artists:
+  - name: Serge Lavalette
+    instrument: Guitare
+
+---

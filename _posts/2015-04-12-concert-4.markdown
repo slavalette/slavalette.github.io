@@ -2,8 +2,7 @@
 title: Malik Mezzadri / Sarah Murcia
 subtitle: Festival "Jazz de Mars"
 layout: default
-modal-id: 5
-date: 12-04-2015
+modal-id: 4
 img: malik-sarah.jpg
 thumbnail: malik-sarah-thumbnail.jpg
 alt: image-alt

@@ -448,6 +448,20 @@ section h3.section-subheading {
     }
 }
 
+.hide-bullets {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: -40px;
+    margin-top: 20px;
+}
+
+a.carousel-control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .timeline {
     position: relative;
     padding: 0;
@@ -883,6 +897,10 @@ ul.social-buttons li a:active {
     margin-bottom: 30px;
 }
 
+.portfolio-modal .modal-content p.artist {
+    margin: 0.5em;
+}
+
 .portfolio-modal .modal-content p.item-intro {
     margin: 20px 0 30px;
     font-family: {{ site.data.template.font.secondary }};
@@ -896,7 +914,7 @@ ul.social-buttons li a:active {
 }
 
 .portfolio-modal .modal-content img {
-    margin-bottom: 30px;
+    width: 100%;
 }
 
 .portfolio-modal .close-modal {

@@ -2,8 +2,7 @@
 title: Antoine Hervier invite Marcel Azzola
 subtitle: Inauguration du festival "Jazz de Mars"
 layout: default
-modal-id: 2
-date: 01-01-1970
+modal-id: 3
 img: antoine-marcel.jpg
 thumbnail: antoine-marcel-thumbnail.jpg
 alt: image-alt
@@ -21,4 +20,5 @@ artists:
     instrument: Contre-Basse
   - name: Vincent Frade
     instrument: Batterie
+
 ---

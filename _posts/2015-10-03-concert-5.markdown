@@ -2,8 +2,7 @@
 title: Return to Rock & Soul Legends
 subtitle: Association "Laurette Fugain"
 layout: default
-modal-id: 4
-date: 03-10-2015
+modal-id: 5
 img: rock-n-soul.jpg
 thumbnail: rock-n-soul-thumbnail.jpg
 alt: image-alt
@@ -35,4 +34,5 @@ artists:
     instrument: Chœur
   - name: Jean-Marrie Marrier
     instrument: Chœur
+
 ---

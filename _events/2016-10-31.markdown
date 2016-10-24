@@ -1,7 +1,0 @@
----
-date: 2016-10-31
-name: Serge Jazz Trio
-time: 19h
-address: Rue de l'Appel du 18 Juin, Nonancourt
-
----

@@ -1,7 +1,0 @@
----
-date: 2016-12-24
-name: Noël Jazz
-time: 00h
-address: Église de la Madeleine de Nonancourt
-
----

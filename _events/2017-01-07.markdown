@@ -1,7 +1,0 @@
----
-date: 2017-01-07
-name: Serge Jazz Trio à Bercy
-time: 20h
-address: Paris Bercy
-
----

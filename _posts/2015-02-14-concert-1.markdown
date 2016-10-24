@@ -3,7 +3,6 @@ title: Jean-Marie Marrier
 subtitle: Album Nature Boy
 layout: default
 modal-id: 1
-date: 14-02-2015
 img: jean-marie-marrier.jpg
 thumbnail: jean-marie-marrier-thumbnail.jpg
 alt: image-alt

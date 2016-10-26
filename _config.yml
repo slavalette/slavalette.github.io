@@ -4,7 +4,7 @@ baseurl:
 # Site settings
 title: Serge Lavalette
 email: contact@serge-lavalette.fr
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+description: "Serge Lavalette est un guitariste, chanteur, compositeur et interprête jazz. Après 30ans de concerts dans le monde, il lance son premier album « Back in Town »."
 
 collections:
   events:

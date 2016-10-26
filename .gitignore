@@ -1,4 +1,8 @@
 ### Jekyll ###
+./download/sources/
+PhotoSerge/
+
+### Jekyll ###
 _site/
 .sass-cache/
 .jekyll-metadata

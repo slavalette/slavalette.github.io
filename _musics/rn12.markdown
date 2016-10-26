@@ -1,7 +1,7 @@
 ---
 sound-cloud-id: 275415857
 title: RN12
-description: Short song's description.
+description:
 auto-play: false
 
 ---

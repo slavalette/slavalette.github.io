@@ -12,7 +12,7 @@
               {% assign sorted_counters = site.counters | sort:"number" | reverse %}
               {% for counter in sorted_counters %}
               <div class="count-item">
-                <h2><span class="count">{{ counter.number }}</span></h2><h4> {{ counter.name }}!</h4>
+                <h2><span class="count">{{ counter.number }}</span></h2><h4> {{ counter.name }} !</h4>
               </div>
               {% endfor %}
             </div>

@@ -737,6 +737,13 @@ a.carousel-control {
 
 #map { height: 20em; }
 
+section#news #facebook-share {
+  display: flex;
+  justify-content: center;
+  margin: 1em;
+}
+
+
 aside.clients img {
     margin: 50px auto;
 }

@@ -4,6 +4,7 @@
   {% capture eventdate %}{{event.date | date: '%s'}}{% endcapture %}
   {% if eventdate > nowunix %}
     {% capture eventname %}{{ event.name }}{% endcapture %}
+    {% capture eventplacename %}{{ event.place_name }}{% endcapture %}
     {% capture eventaddress %}{{ event.address }}{% endcapture %}
     {% capture eventdate %}{{ event.date }}{% endcapture %}
     {% capture eventtime %}{{ event.time }}{% endcapture %}

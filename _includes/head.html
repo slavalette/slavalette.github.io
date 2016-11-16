@@ -1,3 +1,17 @@
+{% capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture %}
+{% assign events = site.events | sort:"date" %}
+{% for event in events %}
+  {% capture eventdate %}{{event.date | date: '%s'}}{% endcapture %}
+  {% if eventdate > nowunix %}
+    {% capture eventname %}{{ event.name }}{% endcapture %}
+    {% capture eventplacename %}{{ event.place_name }}{% endcapture %}
+    {% capture eventaddress %}{{ event.address }}{% endcapture %}
+    {% capture eventdate %}{{ event.date }}{% endcapture %}
+    {% capture eventtime %}{{ event.time }}{% endcapture %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -6,11 +20,26 @@
     <meta name="description" content="{{ site.description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
+    <!-- Default OpenGraph -->
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:video" content="https://youtu.be/igWSSYr154k" />
+
+    {% if eventname %}
+    <!-- News OpenGraph -->
+      <meta property="og:title" content="Nouveau concert {{ eventname }}" />
+      <meta property="og:type" content="article" />
+      <meta property="og:description" content="{{ eventplacename }}, le {{ eventdate }} à {{ eventtime }}" />
+      <meta property="og:url" content="http://www.serge-lavalette.fr/#news" />
+      <meta property="og:image" content="http://www.serge-lavalette.fr/img/serge-rock.jpg" />
+    {% else %}
     <!-- OpenGraph -->
-    <meta property="og:title" content="Serge Lavalette" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="http://www.serge-lavalette.fr/" />
-    <meta property="og:image" content="http://www.serge-lavalette.fr/img/serge.jpg" />
+      <meta property="og:title" content="Serge Lavalette" />
+      <meta property="og:type" content="website" />
+      <meta property="og:description" content="{{ site.description }}" />
+      <meta property="og:url" content="http://www.serge-lavalette.fr/" />
+      <meta property="og:image" content="http://www.serge-lavalette.fr/img/serge.jpg" />
+    {% endif %}
+
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">

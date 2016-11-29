@@ -8,7 +8,8 @@ window.onload = function() {
 function initMap() {
     var options = {
         center: new L.LatLng(46.921982, 2.978952),
-        zoom: 5
+        zoom: 5,
+        scrollWheelZoom: false,
       };
     var osmUrl = 'https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png',
         osmAttribution = 'Map data &copy; 2012 OpenStreetMap contributors',
@@ -38,7 +39,7 @@ function locateUser() {
               .addTo(this.map);
             this.map.setView(
               [longitude, latitude],
-              zoom = 12.5,
+              zoom = 13,
               center = new L.LatLng(longitude, latitude)
             );
         })

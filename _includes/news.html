@@ -8,6 +8,7 @@
     {% capture eventaddress %}{{ event.address }}{% endcapture %}
     {% capture eventdate %}{{ event.date }}{% endcapture %}
     {% capture eventtime %}{{ event.time }}{% endcapture %}
+    {% capture eventlink %}{{ event.link }}{% endcapture %}
     {% break %}
   {% endif %}
 {% endfor %}
@@ -54,7 +55,7 @@
             </div>
 
             <div class="event-address-info">
-              <h5>{{ eventplacename }}</h5>
+              <h5><a href={{ eventlink }}>{{ eventplacename }}</a></h5>
               <div class="event-info">
                 <i class="fa fa-map-marker fa-2x"></i><h5 id="address"> {{ eventaddress }}</h5>
               </div>

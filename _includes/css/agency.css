@@ -715,22 +715,22 @@ a.carousel-control {
   align-items: center;
 }
 
-.event-info {
+.event-infos {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.event-info>h2 {
+.event-infos>h2 {
   text-align: center;
 }
 
-.event-info-tag {
+.event-info {
   display: flex;
   align-items: baseline;
 }
 
-.event-info-tag>i {
+.event-info>i {
   margin: 0.3em;
 }
 
@@ -741,7 +741,7 @@ a.carousel-control {
 }
 
 .event-poster {
-  max-width: 280px;
+  max-width: 360px;
   margin: 1em;
 }
 
@@ -749,6 +749,18 @@ a.carousel-control {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (max-width: 770px) {
+  .event-poster {
+    max-width: 280px;
+    margin: 1em;
+  }
+
+  .event {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 #map { height: 20em; }

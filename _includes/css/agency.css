@@ -710,16 +710,27 @@ a.carousel-control {
 
 .event {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .event-info {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event-info>h2 {
+  text-align: center;
+}
+
+.event-info-tag {
+  display: flex;
   align-items: baseline;
 }
 
-.event-info>i {
+.event-info-tag>i {
   margin: 0.3em;
 }
 
@@ -727,6 +738,11 @@ a.carousel-control {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.event-poster {
+  max-width: 280px;
+  margin: 1em;
 }
 
 .location {

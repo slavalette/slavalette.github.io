@@ -708,11 +708,14 @@ a.carousel-control {
   line-height: 18px;
 }
 
+.hide {
+  display: none;
+}
+
 .event {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
 }
 
 .event-infos {
@@ -741,7 +744,7 @@ a.carousel-control {
 }
 
 .event-poster {
-  max-width: 360px;
+  max-width: 580px;
   margin: 1em;
 }
 
@@ -751,15 +754,52 @@ a.carousel-control {
   align-items: center;
 }
 
+.live-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.live-nav.center {
+  display: flex;
+  justify-content: center;
+}
+
+.live-nav button {
+  font-family: {{ site.data.template.font.primary }};
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  background-color: #{{ site.data.template.color.primary }};
+  border: 0;
+  border-radius: 5px;
+  padding: 1em 1.5em;
+}
+
+.live-nav {
+  margin-top: 2em;
+}
+
+.live-nav button:hover {
+  background-color: #fec503;
+}
+
+.live-nav button i {
+  margin: 10px;
+}
+
+.live-nav button.disabled {
+  background-color: #fff0b4;
+}
+
+.live-nav button.disabled:hover {
+  cursor: default;
+}
+
 @media (max-width: 770px) {
   .event-poster {
-    max-width: 280px;
+    max-width: 360px;
     margin: 1em;
-  }
-
-  .event {
-    flex-wrap: wrap;
-    justify-content: center;
   }
 }
 

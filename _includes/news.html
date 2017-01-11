@@ -1,18 +1,4 @@
 {% capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture %}
-{% assign events = site.events | sort:"date" %}
-{% for event in events %}
-  {% capture eventdate %}{{event.date | date: '%s'}}{% endcapture %}
-  {% if eventdate > nowunix %}
-    {% capture eventname %}{{ event.name }}{% endcapture %}
-    {% capture eventplacename %}{{ event.place_name }}{% endcapture %}
-    {% capture eventaddress %}{{ event.address }}{% endcapture %}
-    {% capture eventdate %}{{ event.date }}{% endcapture %}
-    {% capture eventtime %}{{ event.time }}{% endcapture %}
-    {% capture eventlink %}{{ event.link }}{% endcapture %}
-    {% capture eventposter %}{{ event.poster }}{% endcapture %}
-    {% break %}
-  {% endif %}
-{% endfor %}
 
 <!-- News Section -->
 {% if eventname %}
@@ -21,57 +7,69 @@
           <div class="row">
               <div class="col-lg-12 text-center">
                   <h2 class="section-heading">Actualités</h2>
-                  <h3 class="section-subheading text-muted">Prochain concert</h3>
+                  <h3 class="section-subheading text-muted">Prochains concerts</h3>
               </div>
           </div>
-          <div class="event">
-            <div class="event-infos">
-              <h2>{{ eventname }}</h2>
+          {% for event in events | sort:"date" %}
+            {% capture eventdate %}{{event.date | date: '%s'}}{% endcapture %}
+            {% if eventdate > nowunix %}
+              <div class="event">
+                <div class="event-infos">
+                  <h2>{{ event.name }}</h2>
 
-              <div class="event-info">
-                <i class="fa fa-calendar fa-2x"></i>
-                <h3>
-                  {% assign m = eventdate | date: "%-m" %}
-                  {{ eventdate | date: "%-d" }}
-                  {% case m %}
-                    {% when '1' %} Janvier
-                    {% when '2' %} Févier
-                    {% when '3' %} Mars
-                    {% when '4' %} Avril
-                    {% when '5' %} Mai
-                    {% when '6' %} Juin
-                    {% when '7' %} Juillet
-                    {% when '8' %} Août
-                    {% when '9' %} Septembre
-                    {% when '10' %} Octobre
-                    {% when '11' %} Novembre
-                    {% when '12' %} Décembre
-                  {% endcase %}
-                  {{ eventdate | date: "%Y" }}
-                </h3>
-              </div>
+                  <div class="event-info">
+                    <i class="fa fa-calendar fa-2x"></i>
+                    <h3>
+                      {% assign m = event.date | date: "%-m" %}
+                      {{ event.date | date: "%-d" }}
+                      {% case m %}
+                        {% when '1' %} Janvier
+                        {% when '2' %} Févier
+                        {% when '3' %} Mars
+                        {% when '4' %} Avril
+                        {% when '5' %} Mai
+                        {% when '6' %} Juin
+                        {% when '7' %} Juillet
+                        {% when '8' %} Août
+                        {% when '9' %} Septembre
+                        {% when '10' %} Octobre
+                        {% when '11' %} Novembre
+                        {% when '12' %} Décembre
+                      {% endcase %}
+                      {{ event.date | date: "%Y" }}
+                    </h3>
+                  </div>
 
-              <div class="event-info">
-                <i class="fa fa-clock-o fa-2x"></i>
-                <h3>{{ eventtime }}</h3>
-              </div>
+                  <div class="event-info">
+                    <i class="fa fa-clock-o fa-2x"></i>
+                    <h3>{{ event.time }}</h3>
+                  </div>
 
-              <div class="event-address-info">
-                <h5><a href={{ eventlink }}>{{ eventplacename }}</a></h5>
-                <div class="event-info">
-                  <i class="fa fa-map-marker fa-2x"></i><h5 id="address"> {{ eventaddress }}</h5>
+                  <div class="event-address-info">
+                    <h5><a href={{ eventlink }}>{{ event.place_name }}</a></h5>
+                    <div class="event-info">
+                      <i class="fa fa-map-marker fa-2x"></i><h5 class="address"> {{ event.address }}</h5>
+                    </div>
+                  </div>
                 </div>
+
+                <img class="event-poster" alt="affiche concert" src={{ event.poster }} />
+
+              </div>
+
+            {% endif %}
+          {% endfor %}
+
+          <div class="live-nav">
+            <button class="live-nav-prev"><i class="fa fa-arrow-left fa-1x"></i>Concert précédent</button>
+
+            <div id="facebook-share">
+              <div class="fb-share-button" data-href="http://www.serge-lavalette.fr/#news" data-layout="button_count" data-size="large" data-mobile-iframe="true">
+                <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.serge-lavalette.fr%2F%23news&amp;src=sdkpreparse">Partager</a>
               </div>
             </div>
 
-            <img class="event-poster" alt="affiche concert" src={{ eventposter }} />
-
-          </div>
-
-          <div id="facebook-share">
-            <div class="fb-share-button" data-href="http://www.serge-lavalette.fr/#news" data-layout="button_count" data-size="large" data-mobile-iframe="true">
-              <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.serge-lavalette.fr%2F%23news&amp;src=sdkpreparse">Partager</a>
-            </div>
+            <button class="live-nav-next">Concert suivant<i class="fa fa-arrow-right fa-1x"></i></button>
           </div>
 
         </div>

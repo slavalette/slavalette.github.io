@@ -22,7 +22,7 @@
                     {% capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture %}
                     {% assign events = site.events | sort:"date" %}
                     {% for event in events %}
-                      {% capture eventtime %}{{event.date | date: '%s'}}{% endcapture %}
+                      {% capture eventtime %}{{event.date | date: '%s' | plus: '86399'}}{% endcapture %}
                       {% if eventtime > nowunix %}
                         <li>
                             <a class="page-scroll" href="#news">Actualités</a>

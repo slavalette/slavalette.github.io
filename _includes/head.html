@@ -1,4 +1,4 @@
-{% capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture %}
+{% capture nowunix %}{{ site.time | date: '%s' }}{% endcapture %}
 {% assign events = site.events | sort:"date" %}
 {% for event in events %}
   {% capture eventdate %}{{event.date | date: '%s' | plus: '86399'}}{% endcapture %}

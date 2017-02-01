@@ -25,7 +25,13 @@
                     <p class="text-muted">{{ music.description }}</p>
                 </div>
               {% endfor %}
-              <a style="margin-top: 3em" class="page-scroll btn btn-xl" href="mailto:{{ site.email }}?subject=Commande album Back in Town&body=Bonjour Serge,%0A%0AJe souhaiterais commander l'album Back in Town ! ">Commander l'album</a>
+              <form class="page-scroll btn btn-xl paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                Commander l'album
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="T8JXTN724535W">
+                </br>
+                <input class="paypal-logo" type="image" src="img/PayPal_2014_logo.svg.png" border="0" name="submit" alt="PayPal, le réflexe sécurité pour payer en ligne">
+              </form>
             </div>
 
         </div>

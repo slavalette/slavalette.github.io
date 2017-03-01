@@ -31,5 +31,16 @@
               </a>
             </div>
 
+            <div class="row text-center stores">
+              <h3>Ou télécharger la version numérique</h3>
+              <div id="stores">
+                {% for store in site.stores %}
+                <div>
+                  <a href={{ store.link }}><img src={{ store.logo }} alt="{{ store.name }} logo" /></a>
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+
         </div>
     </section>

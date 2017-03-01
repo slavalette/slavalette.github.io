@@ -11,6 +11,8 @@ collections:
     output: true
   musics:
     output: true
+  stores:
+    output: true
   counters:
     output: true
 

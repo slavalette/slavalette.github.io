@@ -916,6 +916,12 @@ section#contact .text-danger {
     color: #e74c3c;
 }
 
+#newsletter {
+  display: flex;
+  justify-content: center;
+  margin-top: 3em;
+}
+
 footer {
     padding: 25px 0;
     text-align: center;

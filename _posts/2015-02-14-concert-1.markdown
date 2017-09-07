@@ -1,5 +1,6 @@
 ---
 title: Jean-Marie Marrier
+date: 2015-02-14 00:00:00 Z
 subtitle: Album Nature Boy
 layout: default
 modal-id: 1
@@ -10,15 +11,15 @@ project-date: Février 2015
 client: Jean-Marrie Marrier
 place: Théâtre de la Vallée St Rémy sur Avre
 artists:
-  - name: Jean-Marrie Marrier
-    instrument: Chant/Guitare
-  - name: Phiphi Chayeb
-    instrument: Contre-basse
-  - name: Benoit Sourisse
-    instrument: Piano
-  - name: Julien Audigier
-    instrument: Batterie
-  - name: Serge Lavalette
-    instrument: Invité Guitare
-
+- name: Jean-Marrie Marrier
+  instrument: Chant/Guitare
+- name: Phiphi Chayeb
+  instrument: Contre-basse
+- name: Benoit Sourisse
+  instrument: Piano
+- name: Julien Audigier
+  instrument: Batterie
+- name: Serge Lavalette
+  instrument: Invité Guitare
 ---
+

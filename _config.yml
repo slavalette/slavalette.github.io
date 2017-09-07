@@ -1,73 +1,72 @@
-url: www.serge-lavalette.fr
-baseurl:
-
-# Site settings
+---
 title: Serge Lavalette
-email: contact@serge-lavalette.fr
-description: "Serge Lavalette est un guitariste, chanteur, compositeur et interprête jazz. Après 30ans de concerts dans le monde, il lance son premier album « Back in Town »."
-
+timezone: UTC
 collections:
+  counters:
+    title: Counters
+    output: true
   events:
+    title: Events
     output: true
   musics:
+    title: Musics
+    output: true
+  posts:
+    title: Posts
     output: true
   stores:
+    title: Stores
     output: true
-  counters:
+  uploads:
+    title: Uploads
     output: true
-
-# Video
+url: www.serge-lavalette.fr
+baseurl: 
+email: contact@serge-lavalette.fr
+description: Serge Lavalette est un guitariste, chanteur, compositeur et interprête
+  jazz. Après 30ans de concerts dans le monde, il lance son premier album « Back
+  in Town ».
 video:
   title: New record session
   id: igWSSYr154k
   height: 360
   width: 640
-
-# Band names, titles and social links
 people:
 - name: Benoit Sourisse
   pic: benoit-sourisse
   position: B3
   social:
-    - title: globe
-      url: http://charliersourisse.com/
-    - title: facebook
-      url: https://www.facebook.com/benoit.sourisse
-
+  - title: globe
+    url: http://charliersourisse.com/
+  - title: facebook
+    url: https://www.facebook.com/benoit.sourisse
 - name: André Charlier
   pic: andre-charlier
   position: Batterie
   social:
-    - title: twitter
-      url: https://twitter.com/andrecharlier
-    - title: facebook
-      url: https://www.facebook.com/andre.charlier
-    - title: linkedin
-      url: https://www.linkedin.com/in/andr%C3%A9-charlier-a049a945
-
+  - title: twitter
+    url: https://twitter.com/andrecharlier
+  - title: facebook
+    url: https://www.facebook.com/andre.charlier
+  - title: linkedin
+    url: https://www.linkedin.com/in/andr%C3%A9-charlier-a049a945
 - name: Serge Lavalette
   pic: serge-lavalette
   position: Guitare
   social:
-    - title: twitter
-      url: https://twitter.com/LavaletteS_Trio
-    - title: facebook
-      url: https://www.facebook.com/Lavalette-serge-931589130259703/
-    - title: linkedin
-      url: https://fr.linkedin.com/in/serge-lavalette-a1a7462a
-
-# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
-social:
   - title: twitter
     url: https://twitter.com/LavaletteS_Trio
   - title: facebook
     url: https://www.facebook.com/Lavalette-serge-931589130259703/
   - title: linkedin
     url: https://fr.linkedin.com/in/serge-lavalette-a1a7462a
-
-# Upcoming posts
+social:
+- title: twitter
+  url: https://twitter.com/LavaletteS_Trio
+- title: facebook
+  url: https://www.facebook.com/Lavalette-serge-931589130259703/
+- title: linkedin
+  url: https://fr.linkedin.com/in/serge-lavalette-a1a7462a
 future: true
-
-# Build settings
 markdown: kramdown
 permalink: pretty

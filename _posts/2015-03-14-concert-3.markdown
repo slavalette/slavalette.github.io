@@ -1,5 +1,6 @@
 ---
 title: Antoine Hervier invite Marcel Azzola
+date: 2015-03-14 00:00:00 Z
 subtitle: Inauguration du festival "Jazz de Mars"
 layout: default
 modal-id: 3
@@ -10,15 +11,15 @@ project-date: Inconnu
 client: Antoine Hervier
 place: Salle des fêtes de Mainvillier
 artists:
-  - name: Marcel Azzola
-    instrument: Accordéon
-  - name: Antoine Hervier
-    instrument: Piano
-  - name: Serge Lavalette
-    instrument: Guitare
-  - name: Guillaume Souriau
-    instrument: Contre-Basse
-  - name: Vincent Frade
-    instrument: Batterie
-
+- name: Marcel Azzola
+  instrument: Accordéon
+- name: Antoine Hervier
+  instrument: Piano
+- name: Serge Lavalette
+  instrument: Guitare
+- name: Guillaume Souriau
+  instrument: Contre-Basse
+- name: Vincent Frade
+  instrument: Batterie
 ---
+

@@ -1,5 +1,6 @@
 ---
 title: Thierry Eliez trio
+date: 2015-03-07 00:00:00 Z
 subtitle: Inauguration du festival "Jazz de Mars"
 layout: default
 modal-id: 2
@@ -10,13 +11,13 @@ project-date: Mars 2015
 client: Thierry Eliez
 place: Salle des fêtes de Saint Lubin des Joncherets
 artists:
-  - name: Thierry Eliez
-    instrument: Piano/Chant
-  - name: Philippe Eliez
-    instrument: Batterie
-  - name: Daniel Ouvrard
-    instrument: Basse
-  - name: Serge Lavalette
-    instrument: Guitare
-
+- name: Thierry Eliez
+  instrument: Piano/Chant
+- name: Philippe Eliez
+  instrument: Batterie
+- name: Daniel Ouvrard
+  instrument: Basse
+- name: Serge Lavalette
+  instrument: Guitare
 ---
+

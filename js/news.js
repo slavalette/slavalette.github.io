@@ -18,13 +18,11 @@ if (events.length > 1) {
 } else {}
 
 function check() {
+  next.className = 'live-nav-next'
+  prev.className = 'live-nav-prev'
   if (index === events.length - 1) {
     next.className = 'live-nav-next disabled'
-    prev.className = 'live-nav-prev'
-  }
-
-  if (index === 0) {
-    next.className = 'live-nav-next'
+  } else if (index === 0) {
     prev.className = 'live-nav-prev disabled'
   }
 

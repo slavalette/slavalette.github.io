@@ -30,7 +30,7 @@
       <meta property="og:type" content="article" />
       <meta property="og:description" content="{{ eventplacename }}, le {{ eventdate | date: '%d/%m/%y' }} à {{ eventtime }}" />
       <meta property="og:url" content="http://www.serge-lavalette.fr/#news" />
-      <meta property="og:image" content={{ eventposter }} />
+      <meta property="og:image" content="{{ "http://" | append: site.url | append: "/" | append: eventposter }}" />
     {% else %}
     <!-- OpenGraph -->
       <meta property="og:title" content="Serge Lavalette" />

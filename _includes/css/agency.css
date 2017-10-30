@@ -830,6 +830,10 @@ a.carousel-control {
     max-width: 360px;
     margin: 1em;
   }
+  
+  .live-nav .ro-text {
+    display: none;
+  }
 }
 
 @media (max-width: 420px) {

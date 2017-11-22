@@ -53,7 +53,9 @@
                   </div>
                 </div>
 
-                <img class="event-poster" width={{ event.width }} alt="affiche concert" src={{ event.poster }} />
+                <a href={{ event.website }}>
+                  <img class="event-poster" width={{ event.width }} alt="affiche concert" src={{ event.poster }} />
+                </a>
 
                 {% if event.booking %}
                 <a class="btn btn-xl" target='blank' href={{ event.booking }}>

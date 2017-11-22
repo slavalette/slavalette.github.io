@@ -83,7 +83,18 @@
     </section>
 
     <div id="fb-root"></div>
-    <script>(function(d, s, id) {
+    <script>
+    (function() {
+    var d = new Date(),
+        month = '' + (d.getMonth() + 1),
+        day = '' + d.getDate(),
+        year = d.getFullYear();
+
+    if (month.length < 2) month = '0' + month;
+    if (day.length < 2) day = '0' + day;
+    console.log([day, month, year].join('-'));
+    }());
+    (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;

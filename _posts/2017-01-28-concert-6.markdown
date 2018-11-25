@@ -2,7 +2,6 @@
 title: Serge Lavalette Trio
 date: 2017-01-28 00:00:00 Z
 subtitle: Jazz de Mars
-layout: default
 modal-id: 1
 img: serge-28-01-2017.jpg
 thumbnail: serge-28-01-2017-thumbnail.jpg

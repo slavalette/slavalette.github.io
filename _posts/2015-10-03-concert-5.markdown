@@ -2,7 +2,6 @@
 title: Return to Rock & Soul Legends
 date: 2015-10-03 00:00:00 Z
 subtitle: Association "Laurette Fugain"
-layout: default
 modal-id: 5
 img: rock-n-soul.jpg
 thumbnail: rock-n-soul-thumbnail.jpg

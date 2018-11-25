@@ -25,7 +25,7 @@
                                     {% else if %}
                                       <div class="item" data-slide-number="{{ post.modal-id }}">
                                     {% endif %}
-                                      <img src="img/portfolio/{{ post.img }}"></div>
+                                      <img src="portfolio/{{ post.img }}"></div>
                                     {% endfor %}
                                   </div><!-- Carousel nav -->
                                   <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -62,7 +62,7 @@
                       <ul class="hide-bullets">
                           {% for post in site.posts %}
                           <li class="col-sm-2">
-                              <a class="thumbnail" id="carousel-selector-{{ post.modal-id }}"><img src="img/portfolio/{{ post.thumbnail }}"></a>
+                              <a class="thumbnail" id="carousel-selector-{{ post.modal-id }}"><img src="portfolio/{{ post.thumbnail }}"></a>
                           </li>
                           {% endfor %}
                       </ul>

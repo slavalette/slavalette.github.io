@@ -2,7 +2,6 @@
 title: Thierry Eliez trio
 date: 2015-03-07 00:00:00 Z
 subtitle: Inauguration du festival "Jazz de Mars"
-layout: default
 modal-id: 2
 img: thierry-eliez.jpg
 thumbnail: thierry-eliez-thumbnail.jpg

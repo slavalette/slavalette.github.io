@@ -2,7 +2,6 @@
 title: Antoine Hervier invite Marcel Azzola
 date: 2015-03-14 00:00:00 Z
 subtitle: Inauguration du festival "Jazz de Mars"
-layout: default
 modal-id: 3
 img: antoine-marcel.jpg
 thumbnail: antoine-marcel-thumbnail.jpg

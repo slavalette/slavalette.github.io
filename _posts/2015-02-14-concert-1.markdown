@@ -2,7 +2,6 @@
 title: Jean-Marie Marrier
 date: 2015-02-14 00:00:00 Z
 subtitle: Album Nature Boy
-layout: default
 modal-id: 1
 img: jean-marie-marrier.jpg
 thumbnail: jean-marie-marrier-thumbnail.jpg

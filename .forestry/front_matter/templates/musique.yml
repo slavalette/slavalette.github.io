@@ -4,13 +4,15 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Titre
+  config:
+    required: true
 - type: number
   name: sound-cloud-id
   label: sound-cloud-id
 - type: text
   name: description
-  label: description
+  label: Description
 - type: boolean
   name: auto-play
   label: auto-play

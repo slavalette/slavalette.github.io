@@ -9,11 +9,7 @@ sections:
   create: all
 - type: directory
   path: _stores
-  label: Stores
-  create: all
-  match: "**/*"
-- type: jekyll-posts
-  label: Posts
+  label: Boutiques en ligne
   create: all
   match: "**/*"
 - type: directory

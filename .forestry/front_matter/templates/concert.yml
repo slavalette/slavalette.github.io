@@ -4,22 +4,33 @@ hide_body: true
 fields:
 - type: datetime
   name: date
-  label: Date
+  label: Date du concert
+  config:
+    date_format: DD/MM/YYY
+    required: true
 - type: text
   name: name
-  label: name
+  label: Nom du concert
+  default: Serge Lavalette Trio
 - type: text
   name: address
   label: Adresse de la salle de concert
+  config:
+    required: true
 - type: text
   name: time
-  label: time
+  label: Heure du concert
+  config:
+    required: true
 - type: text
   name: place_name
   label: Nom de la salle de concert
+  config:
+    required: true
 - type: text
   name: link
   label: Lien vers le site de la salle de concert ou la billeterie
 - type: file
   name: poster
   label: Affiche du concert
+  default: "/img/serge.jpg"

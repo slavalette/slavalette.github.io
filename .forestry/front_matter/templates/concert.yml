@@ -23,5 +23,3 @@ fields:
 - type: file
   name: poster
   label: Affiche du concert
-pages:
-- _events/2020-01-24-concert.md

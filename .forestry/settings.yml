@@ -8,11 +8,6 @@ sections:
   label: Pages
   create: all
 - type: directory
-  path: _uploads
-  label: Uploads
-  create: all
-  match: "**/*"
-- type: directory
   path: _stores
   label: Stores
   create: all
@@ -28,14 +23,11 @@ sections:
   match: "**/*"
 - type: directory
   path: _events
-  label: Events
+  label: Concerts
   create: all
   match: "**/*"
-- type: directory
-  path: _counters
-  label: Counters
-  create: all
-  match: "**/*"
+  templates:
+  - concert
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''

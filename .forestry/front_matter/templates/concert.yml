@@ -4,10 +4,10 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Nom du concert
 - type: datetime
   name: date
-  label: date
+  label: Date
 - type: text
   name: name
   label: name
@@ -19,10 +19,10 @@ fields:
   label: time
 - type: text
   name: place_name
-  label: place_name
+  label: Nom de la salle de concert
 - type: text
   name: link
-  label: link
+  label: Lien vers le site de la salle de concert ou la billeterie
 - type: file
   name: poster
-  label: poster
+  label: Affiche du concert

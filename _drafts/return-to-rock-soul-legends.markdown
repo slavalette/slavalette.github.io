@@ -1,6 +1,6 @@
 ---
 title: Return to Rock & Soul Legends
-date: 2015-10-03T00:00:00.000+00:00
+date: 2020-05-15 00:00:00 +0000
 subtitle: Association "Laurette Fugain"
 layout: default
 modal-id: "5"

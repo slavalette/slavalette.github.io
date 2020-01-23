@@ -1,0 +1,28 @@
+---
+label: Concert
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: name
+  label: name
+- type: text
+  name: address
+  label: address
+- type: text
+  name: time
+  label: time
+- type: text
+  name: place_name
+  label: place_name
+- type: text
+  name: link
+  label: link
+- type: file
+  name: poster
+  label: poster

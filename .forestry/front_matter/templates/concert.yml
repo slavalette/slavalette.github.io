@@ -22,6 +22,9 @@ fields:
   label: Heure du concert
   config:
     required: true
+    min: '2'
+    max: '5'
+  default: ''
 - type: text
   name: place_name
   label: Nom de la salle de concert

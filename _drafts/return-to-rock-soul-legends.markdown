@@ -1,0 +1,39 @@
+---
+title: Return to Rock & Soul Legends
+date: 2015-10-03T00:00:00.000+00:00
+subtitle: Association "Laurette Fugain"
+layout: default
+modal-id: "5"
+img: rock-n-soul.jpg
+thumbnail: rock-n-soul-thumbnail.jpg
+alt: image-alt
+project-date: Octobre 2015
+client: Laurent Gampel
+place: La Cigalle
+artists:
+- name: Laurent Gampel
+  instrument: Chant
+- name: Lavalette Serge
+  instrument: Chef d'Orchestre / Guitare
+- name: Hervé Le Bouché
+  instrument: Batterie
+- name: Thierry Jean-Pierre
+  instrument: Basse
+- name: Jean-Baptiste
+  instrument: Clavier
+- name: Nicolas Guiraud
+  instrument: Percussions
+- name: Laurent Bonnet
+  instrument: Saxophone
+- name: Olivier Caron
+  instrument: Trombonne
+- name: Éric Poirrier
+  instrument: Trompette
+- name: Vanessa Maugez
+  instrument: Chœur
+- name: Myriam Abel
+  instrument: Chœur
+- name: Jean-Marrie Marrier
+  instrument: Chœur
+
+---

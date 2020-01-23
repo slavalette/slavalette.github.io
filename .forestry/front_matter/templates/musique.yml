@@ -1,0 +1,16 @@
+---
+label: Musique
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: number
+  name: sound-cloud-id
+  label: sound-cloud-id
+- type: text
+  name: description
+  label: description
+- type: boolean
+  name: auto-play
+  label: auto-play

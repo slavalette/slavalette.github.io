@@ -2,9 +2,6 @@
 label: Concert
 hide_body: true
 fields:
-- type: text
-  name: title
-  label: Nom du concert
 - type: datetime
   name: date
   label: Date
@@ -13,7 +10,7 @@ fields:
   label: name
 - type: text
   name: address
-  label: address
+  label: Adresse de la salle de concert
 - type: text
   name: time
   label: time

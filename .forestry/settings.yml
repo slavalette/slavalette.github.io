@@ -4,10 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: jekyll-pages
-  label: Test
-  create: all
-  match: "**/*"
 - type: directory
   path: _musicians
   label: Musiciens

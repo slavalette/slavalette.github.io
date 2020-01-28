@@ -4,9 +4,11 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: document
+- type: directory
   path: _includes
   label: Sections
+  create: all
+  match: "**/*"
 - type: directory
   path: _musicians
   label: Musiciens

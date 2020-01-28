@@ -4,19 +4,19 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Serge Lavalette Trio</h2>
-                        <h3 class="section-subheading text-muted">Deux « monstres sacrés » l'accompagnent... Un son incomparable... Une énergie très communicative !</h3>
+                        <h2 class="section-heading">Accompagné par les meilleurs</h2>
+                        <h3 class="section-subheading text-muted">Peut importe la formation, ils assurent le show !</h3>
                     </div>
                 </div>
                 <div class="row">
-                    {% for member in site.trio %}
+                    {% for musician in site.musicians %}
                     <div class="col-sm-4">
                         <div class="band-member">
-                            <img src="img/band/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
-                            <h4>{{ member.name }}</h4>
-                            <p class="text-muted">{{ member.position }}</p>
+                            <img src="{{musician.pic}}" class="img-responsive img-circle" alt="">
+                            <h4>{{ musician.name }}</h4>
+                            <p class="text-muted">{{ musician.position }}</p>
                             <ul class="list-inline social-buttons">
-                                {% for network in member.social %}
+                                {% for network in musician.social %}
                                 <li>
                                     <a href="{{ network.url }}">
                                         <i class="fa fa-{{ network.title }}"></i>
@@ -54,66 +54,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class='bg-darkest-gray'>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Serge Lavalette Groove Band</h2>
-                        <h3 class="section-subheading text-muted">À cinq pour toujours plus de groove !</h3>
-                    </div>
-                </div>
-                <div class="row">
-                    {% for member in site.quintet %}
-                    <div class="col-sm-4">
-                        <div class="band-member">
-                            <img src="img/band/{{ member.pic }}.jpg" class="img-responsive img-circle" alt="">
-                            <h4>{{ member.name }}</h4>
-                            <p class="text-muted">{{ member.position }}</p>
-                            <ul class="list-inline social-buttons">
-                                {% for network in member.social %}
-                                <li>
-                                    <a href="{{ network.url }}">
-                                        <i class="fa fa-{{ network.title }}"></i>
-                                    </a>
-                                </li>
-                                {% endfor %}
-                            </ul>
-                        </div>
-                    </div>
-                    {% endfor %}
-                </div>
-                <!-- <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2 text-center">
-                        <p class="large text-muted">Téléchargez directement tout ce dont il est nécessaire à la préparation d'un concert du Serge Lavalette Groove Band.</p>
-                        <div class="download">
-
-                            <div class="download-image">
-                                <a href="download/plan-scene-slt.pdf" style="color: black; underline: none" download>
-                                    <h4>Plan de scène </h4>
-                                    <i class="fa fa-download fa-2x" aria-hidden="true"></i>
-                                </a>
-                            </div>
-
-                            <div class="download-image">
-                                <a href="download/fiche-technique-slt.pdf" style="color: black; underline: none" download>
-                                    <h4>Fiche technique</h4>
-                                    <i class="fa fa-download fa-2x" aria-hidden="true"></i>
-                                </a>
-                            </div>
-
-                            <div class="download-image">
-                                <a href="download/patch-slt.pdf" style="color: black; underline: none" download>
-                                    <h4>Patch</h4>
-                                    <i class="fa fa-download fa-2x" aria-hidden="true"></i>
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </section>
     </div>

@@ -20,6 +20,9 @@ collections:
   uploads:
     title: Uploads
     output: true
+  musicians:
+    title: Musicians
+    output: true
 url: www.serge-lavalette.fr
 baseurl:
 email: contact@serge-lavalette.fr
@@ -31,77 +34,6 @@ video:
   id: igWSSYr154k
   height: 360
   width: 640
-trio:
-- name: Benoit Sourisse
-  pic: benoit-sourisse
-  position: B3
-  social:
-  - title: globe
-    url: http://charliersourisse.com/
-  - title: facebook
-    url: https://www.facebook.com/benoit.sourisse
-- name: André Charlier
-  pic: andre-charlier
-  position: Batterie
-  social:
-  - title: twitter
-    url: https://twitter.com/andrecharlier
-  - title: facebook
-    url: https://www.facebook.com/andre.charlier
-  - title: linkedin
-    url: https://www.linkedin.com/in/andr%C3%A9-charlier-a049a945
-- name: Serge Lavalette
-  pic: serge-lavalette
-  position: Guitare
-  social:
-  - title: twitter
-    url: https://twitter.com/LavaletteS_Trio
-  - title: facebook
-    url: https://www.facebook.com/Lavalette-serge-931589130259703/
-  - title: linkedin
-    url: https://fr.linkedin.com/in/serge-lavalette-a1a7462a
-quintet:
-- name: Renaud PALISSEAUX
-  pic: renaud-palisseaux
-  position: Orgue B3
-  social:
-  - title: globe
-    url: https://www.placeminute.com/concert/renaud_palisseaux_quartet,1,23806.html
-- name: Michael JOUSSEIN
-  pic: michael-joussein
-  position: Trombone
-  social:
-  - title: globe
-    url: http://musicali-daniel-bonin.fr/2015/12/michael-joussein-un-tromboniste-francais-specialiste-du-jazz-afro-cubain-qui-a-joue-avec-les-plus-grands-noms-du-jazz.html
-- name: Olivier BRIDOT
-  pic: olivier-bridot
-  position: Trompette
-  social:
-  - title: youtube
-    url: https://www.youtube.com/watch?v=11xWamOupnU
-- name: David MIRANDON
-  pic: david-mirandon
-  position: Batterie
-  social:
-  - title: youtube
-    url: https://www.youtube.com/watch?v=j_gKFpg490g
-- name: Serge Lavalette
-  pic: serge-lavalette
-  position: Guitare
-  social:
-  - title: twitter
-    url: https://twitter.com/LavaletteS_Trio
-  - title: facebook
-    url: https://www.facebook.com/Lavalette-serge-931589130259703/
-  - title: linkedin
-    url: https://fr.linkedin.com/in/serge-lavalette-a1a7462a
-social:
-- title: twitter
-  url: https://twitter.com/LavaletteS_Trio
-- title: facebook
-  url: https://www.facebook.com/Lavalette-serge-931589130259703/
-- title: linkedin
-  url: https://fr.linkedin.com/in/serge-lavalette-a1a7462a
 future: true
 markdown: kramdown
 permalink: pretty

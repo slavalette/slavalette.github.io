@@ -5,9 +5,8 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: document
-  path: _includes/band.html
+  path: _includes/bands.html
   label: Groupe
-  match: "**/*"
 - type: directory
   path: _musicians
   label: Musiciens

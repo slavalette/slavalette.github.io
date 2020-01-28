@@ -7,7 +7,7 @@ sections:
 - type: directory
   path: _includes
   label: Sections
-  create: all
+  create: none
   match: "**/*"
 - type: directory
   path: _musicians

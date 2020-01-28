@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: document
+  path: _includes/band.html
+  label: Groupe
+  match: "**/*"
 - type: directory
   path: _musicians
   label: Musiciens

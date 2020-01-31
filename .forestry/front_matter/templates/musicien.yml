@@ -28,3 +28,5 @@ fields:
     label: Lien
     description: Lien vers la page Twitter, FaceBook, Youtube, …
   label: Réseaux sociaux
+pages:
+- _musicians/Mehdi Madir.md

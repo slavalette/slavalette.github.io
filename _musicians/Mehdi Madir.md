@@ -5,6 +5,5 @@ position: Basse
 social:
 - url: https://www.facebook.com/chou.marin.58
   title: Facebook
-published: false
 
 ---

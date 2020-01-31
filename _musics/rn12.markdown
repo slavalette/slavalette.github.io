@@ -1,7 +1,0 @@
----
-title: Shuffle
-sound-cloud-id: https://soundcloud.com/serge-lavalette/shuffle-e
-description: 
-auto-play: false
-
----

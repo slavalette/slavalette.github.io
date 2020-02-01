@@ -4,11 +4,11 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: directory
-  path: _includes
-  label: Sections
+- type: jekyll-pages
+  label: Page
   create: none
   match: "**/*"
+  new_doc_ext: index.html
 - type: directory
   path: _musicians
   label: Musiciens

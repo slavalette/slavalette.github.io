@@ -7,7 +7,6 @@ sections:
 - type: jekyll-pages
   label: Page
   create: none
-  match: "**/*"
   new_doc_ext: index.html
 - type: directory
   path: _musicians

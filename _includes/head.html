@@ -18,7 +18,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="{{ site.description }}">
+    <meta name="description" content="{{ page.site_description }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- Default OpenGraph -->
@@ -35,7 +35,7 @@
     <!-- OpenGraph -->
       <meta property="og:title" content="Serge Lavalette" />
       <meta property="og:type" content="website" />
-      <meta property="og:description" content="{{ site.description }}" />
+      <meta property="og:description" content="{{ page.site_description }}" />
       <meta property="og:url" content="http://www.serge-lavalette.fr/" />
       <meta property="og:image" content="http://www.serge-lavalette.fr/img/serge.jpg" />
     {% endif %}

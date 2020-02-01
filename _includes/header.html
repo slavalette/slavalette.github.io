@@ -25,23 +25,23 @@
                       {% capture eventtime %}{{event.date | date: '%s' | plus: '86399'}}{% endcapture %}
                       {% if eventtime > nowunix %}
                         <li>
-                            <a class="page-scroll" href="#news">Actualités</a>
+                            <a class="page-scroll" href="#news">{{page.nav.news}}</a>
                         </li>
                         {% break %}
                       {% endif %}
                     {% endfor %}
 
                     <li>
-                        <a class="page-scroll" href="#music">Musique</a>
+                        <a class="page-scroll" href="#resume">{{page.nav.resume}}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#resume">Biographie</a>
+                        <a class="page-scroll" href="#music">{{page.nav.music}}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#bands">Musiciens</a>
+                        <a class="page-scroll" href="#bands">{{page.nav.bands}}</a>
                     </li>
                     <li>
-                      <a class="page-scroll" href="mailto:{{ site.email }}">Contact</a>
+                      <a class="page-scroll" href="mailto:{{ site.email }}">{{page.nav.contact}}</a>
                     </li>
                 </ul>
             </div>
@@ -54,8 +54,8 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Guitariste - Chanteur - Compositeur</div>
-                <div class="intro-heading">Musicien Jazz</div>
+                <div class="intro-lead-in">{{page.serge.subtitle}}</div>
+                <div class="intro-heading">{{page.serge.title}}</div>
                 <a href="#music" class="page-scroll btn btn-xl">Ma Musique</a>
             </div>
         </div>

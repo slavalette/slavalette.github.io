@@ -26,14 +26,6 @@ collections:
 url: www.serge-lavalette.fr
 baseurl:
 email: contact@serge-lavalette.fr
-description: Serge Lavalette est un guitariste, chanteur, compositeur et interprête
-  jazz. Après 30ans de concerts dans le monde, il lance son premier album « Back
-  in Town ».
-video:
-  title: New record session
-  id: igWSSYr154k
-  height: 360
-  width: 640
 future: true
 markdown: kramdown
 permalink: pretty

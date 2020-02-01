@@ -1,0 +1,69 @@
+---
+label: Site
+hide_body: true
+fields:
+- type: text
+  name: layout
+  label: layout
+- type: textarea
+  name: site_description
+  label: site_description
+- type: file
+  name: background_image
+  label: background_image
+- type: field_group
+  name: nav
+  label: nav
+  fields:
+  - type: text
+    name: news
+    label: news
+  - type: text
+    name: music
+    label: music
+  - type: text
+    name: resume
+    label: resume
+  - type: text
+    name: bands
+    label: bands
+  - type: text
+    name: contact
+    label: contact
+- type: field_group
+  name: serge
+  label: serge
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: subtitle
+    label: subtitle
+- type: field_group
+  name: video
+  label: video
+  fields:
+  - type: text
+    name: id
+    label: id
+- type: field_group
+  name: trio
+  label: trio
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: description
+    label: description
+- type: field_group
+  name: sextet
+  label: sextet
+  fields:
+  - type: text
+    name: name
+    label: name
+  - type: text
+    name: description
+    label: description

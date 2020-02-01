@@ -5,65 +5,100 @@ fields:
 - type: text
   name: layout
   label: layout
+  hidden: true
 - type: textarea
   name: site_description
-  label: site_description
+  label: Description du site
+  description: La balise meta-description est très importante pour le référencement
+    naturel. Cette description permet de cibler des mots-clés pour lesquels vous souhaitez
+    optimiser une page.  C'est un indicateur précieux pour les internautes et les
+    moteurs de recherche. Elle leur permet en effet d’avoir une idée du contenu de
+    la page.
+  config:
+    max: '161'
+    required: true
+  default: Serge Lavalette est un guitariste, chanteur, compositeur et interprète
+    jazz. Après 30ans de concerts dans le monde, il lance son premier album « Back
+    in Town ».
 - type: file
   name: background_image
-  label: background_image
+  label: Fond d'écran
+  description: Cette imagine en plus de s'afficher en fond d'écran est aussi l'affiche
+    par défaut de tes concerts quand ceux-ci n'ont pas d'affiche.
 - type: field_group
   name: nav
-  label: nav
   fields:
   - type: text
     name: news
-    label: news
-  - type: text
-    name: music
-    label: music
+    label: Actualités
+    description: Section où se trouve tes prochains concerts.
   - type: text
     name: resume
-    label: resume
+    label: Biographie
+    description: Section où se trouve les compteurs et donne accès au téléchargement
+      de ta biographie.
+  - type: text
+    name: music
+    label: Musique
+    description: Section où se trouve tes musiques et vidéos.
   - type: text
     name: bands
-    label: bands
+    label: Groupes
+    description: Section où se trouve tes formations et leurs musiciens.
   - type: text
     name: contact
-    label: contact
+    label: Contact
+    hidden: true
+  label: Onglets de navigation
 - type: field_group
   name: serge
-  label: serge
   fields:
   - type: text
     name: title
-    label: title
+    label: Titre
+    description: C'est le plus gros titre affiché sur le fond d'écran.
   - type: text
     name: subtitle
-    label: subtitle
+    label: Sous-titre
+    description: Titre plus petit se trouvant sur le fond d'écran.
+  label: Serge Lavalette
+  description: Les informations qui te concerne.
 - type: field_group
   name: video
-  label: video
   fields:
   - type: text
     name: id
-    label: id
+    label: Numéro d'identification de la vidéo Youtube
+    description: Ce numéro te permet d'afficher la vidéo de ton choix dans la section
+      "Musique".
+  label: Vidéo
 - type: field_group
   name: trio
-  label: trio
   fields:
   - type: text
     name: name
-    label: name
+    label: Nom
+    description: Te permet de donner un nom au trio. Par défaut celui-ci s'appellera
+      "Serge Lavalette Trio".
+    default: Serge Lavalette Trio
   - type: text
     name: description
-    label: description
+    label: Description
+    description: Sous-titre venant s'inscrire sous le nom du trio.
+  label: Serge Lavalette Trio
+  description: Informations concernant ton trio.
 - type: field_group
   name: sextet
-  label: sextet
+  label: Sextet
   fields:
   - type: text
     name: name
-    label: name
+    label: Nom
+    description: Te permet de donner un nom au sextet. Par défaut celui-ci s'appellera
+      "Serge Lavalette Groove Band".
+    default: Serge Lavalette Groove Band
   - type: text
     name: description
-    label: description
+    label: Description
+    description: " Sous-titre venant s'inscrire sous le nom du sextet."
+  description: Informations concernant ton sextet.

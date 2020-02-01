@@ -8,6 +8,8 @@ sections:
   label: Site
   create: none
   new_doc_ext: index.html
+  templates:
+  - site
 - type: directory
   path: _musicians
   label: Musiciens

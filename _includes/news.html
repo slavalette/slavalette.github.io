@@ -11,7 +11,7 @@
               </div>
           </div>
           {% for event in events | sort:"date" %}
-            {% capture eventdate %}{{ event.date | date: '%s'}}{% endcapture %}
+            {% capture eventdate %}{{ event.date | date: '%s' | plus: '86399'}}{% endcapture %}
             {% if eventdate > nowunix %}
               <div class="event">
                 <div class="event-infos">
@@ -21,7 +21,7 @@
                     <i class="fa fa-calendar fa-2x"></i>
                     <h3>
                       {% assign m = event.date | date: "%-m" %}
-                      {{ event.date | date: "%-d" }}
+                      {{ event.date | date: "%-d" | plus: 1 }}
                       {% case m %}
                         {% when '1' %} Janvier
                         {% when '2' %} Févier

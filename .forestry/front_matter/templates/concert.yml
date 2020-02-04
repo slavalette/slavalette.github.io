@@ -1,6 +1,7 @@
 ---
 label: Concert
 hide_body: true
+display_field: name
 fields:
 - type: datetime
   name: date

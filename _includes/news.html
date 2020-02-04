@@ -21,7 +21,7 @@
                     <i class="fa fa-calendar fa-2x"></i>
                     <h3>
                       {% assign m = event.date | date: "%-m" %}
-                      {{ event.date | date: "%-d" | plus: 1 }}
+                      {{ event.date | date: "%-d" }}
                       {% case m %}
                         {% when '1' %} Janvier
                         {% when '2' %} Févier

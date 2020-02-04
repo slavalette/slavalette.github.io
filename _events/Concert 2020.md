@@ -1,6 +1,6 @@
 ---
 name: Serge Lavalette Groove Band
-poster: "/img/serge_lavalette_jcm02.jpg"
+poster: "/img/SLGB.JPG"
 date: 2020-05-29
 address: 30 rue Saint-Just 94200 Ivry-sur-Seine
 time: 21h

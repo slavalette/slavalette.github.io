@@ -11,7 +11,7 @@
               </div>
           </div>
           {% for event in events | sort:"date" %}
-            {% capture eventdate %}{{ event.date | date: '%s' | plus: '86399'}}{% endcapture %}
+            {% capture eventdate %}{{ event.date | date: '%s'}}{% endcapture %}
             {% if eventdate > nowunix %}
               <div class="event">
                 <div class="event-infos">

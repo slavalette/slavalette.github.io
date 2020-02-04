@@ -6,6 +6,5 @@ address: 30 rue Saint-Just 94200 Ivry-sur-Seine
 time: 21h
 place_name: Salle Saint-Just
 link: www.jazzivry.com
-published: false
 
 ---

@@ -39,5 +39,3 @@ fields:
   name: poster
   label: Affiche du concert
   default: "/img/serge.jpg"
-pages:
-- _events/test.md

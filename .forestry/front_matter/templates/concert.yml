@@ -40,5 +40,6 @@ fields:
   label: Affiche du concert
   default: "/img/serge.jpg"
 pages:
+- _events/2021-11-13-concert.md
 - _events/Concert 2020.md
 - _events/Concerts 2020.md

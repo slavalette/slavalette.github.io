@@ -1,7 +1,7 @@
 ---
 name: Renaud PALISSEAUX
 pic: img/band/renaud-palisseaux.jpg
-position: Orgue/B3
+position: Orgue B3
 band: Sextet
 social:
 - title: globe

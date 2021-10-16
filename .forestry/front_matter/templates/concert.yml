@@ -41,5 +41,6 @@ fields:
   default: "/img/serge.jpg"
 pages:
 - _events/2021-11-13-concert.md
+- _events/2022-03-19-concert.md
 - _events/Concert 2020.md
 - _events/Concerts 2020.md

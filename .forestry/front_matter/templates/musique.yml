@@ -16,5 +16,3 @@ fields:
 - type: boolean
   name: auto-play
   label: auto-play
-pages:
-- _musics/putty-fonky-beat-cut.md
